@@ -8,7 +8,7 @@
 
 ### 2. Create a project named "new-project1", a user "new-user1" with password "new-user1", and assign a new role role "manager" to that user.    
 
-    openstack project create "project1"  
+    openstack project create "new-project1"  
     openstack project list  
     openstack user create "new-user1"  
     openstack user list  
