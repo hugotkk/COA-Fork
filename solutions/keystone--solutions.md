@@ -14,6 +14,7 @@
     openstack user list  
     openstack role create "manager"  
     openstack role list  
+    openstack role add --project "new-project1" --user "new-user1" "manager"
 
 ---
 
