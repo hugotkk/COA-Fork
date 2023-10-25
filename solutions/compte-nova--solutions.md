@@ -15,16 +15,15 @@
 
 --
 
-    . admin_rc.sh  
-    nova flavor-list  
-    nova flavor-create m1.extra_tiny auto 64 0 1 --rxtx-factor 1.0
+    openstack flavor list 
+    openstack flavor create m1.extra_tiny --ram 64 --disk 0 --vcpus 1
 
   
 
 ### 3. Allow the tenant (project) "demo" to access the flavor
 
-    openstack project list  
-    nova flavor-access-add m1.extra_tiny <demo>  
+    openstack flavor list 
+    openstack flavor create m1.extra_tiny --ram 64 --disk 0 --vcpus 1 --project demo --private
 
 **additional help**  
 _delete_
